@@ -77,10 +77,29 @@ switch (day) {
 for (var number = 1; number <= 5; number++) {
   console.log(number);
 }
-console.log("Counting completed!");
+console.log("For counting completed!");
 
-for (var number = 5; number >= 1; number--) {
+for (number = 5; number >= 1; number--) {
   console.log(number);
 }
-console.log("Countdown finished!");
+console.log("For countdown finished!");
 
+number = 1;
+while (number <= 5) {
+  console.log(number);
+  number++;
+}
+console.log("While counting completed!");
+
+number = 5;
+while (number >= 1) {
+  console.log(number);
+  number--;
+}
+console.log("While countdown finished!");
+
+var year = 2018;
+while (year <= 2022) {
+  console.log(year);
+  year++;
+}
