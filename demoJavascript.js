@@ -72,3 +72,15 @@ switch (day) {
   default:
     console.log("There is no such day");
 }
+
+// for and while loops
+for (var number = 1; number <= 5; number++) {
+  console.log(number);
+}
+console.log("Counting completed!");
+
+for (var number = 5; number >= 1; number--) {
+  console.log(number);
+}
+console.log("Countdown finished!");
+
