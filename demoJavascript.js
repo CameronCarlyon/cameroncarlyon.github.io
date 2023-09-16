@@ -131,17 +131,38 @@ for (var i = 1; i <= 10; i++) {
 }
 
 // Functions, Objects and Arrays
-function addTwoNums (a,b){
-  var c = a + b
-  console.log(c)
+function addTwoNums(a, b) {
+  var c = a + b;
+  console.log(c);
 }
-addTwoNums(20,40)
+addTwoNums(20, 40);
 
-var liverpoolPlayers = ["0", "Alisson Becker", "Joe Gomez", "3", "Virgil Van Dijk", "Ibrahima Konte"]
-console.log(liverpoolPlayers[5])
+var liverpoolPlayers = [
+  "0",
+  "Alisson Becker",
+  "Joe Gomez",
+  "3",
+  "Virgil Van Dijk",
+  "Ibrahima Konte",
+];
+console.log(liverpoolPlayers[5]);
 
-function letterFinder (word,match){
-  for (var counter = 0; counter++; counter==word.length){
-    if 
+function letterFinder(word, match) {
+  for (var i = 0; i < word.length; i++) {
+    if (word[i] == match) {
+      console.log("Found the", match, "at", i);
+    } else console.log("---No match found at", i);
   }
 }
+letterFinder("test", "t");
+
+// -- INCORRECT --
+// function letterFinder (word, match){
+//   for (var counter = 0; counter++; counter==word.length){
+//     if (word[i]) {
+//       word[i] == match
+//       console.log('Found the', match, 'at', i)
+//     } else console.log('---No match found at', i)
+//   }
+// }
+// letterFinder("test", "t")
