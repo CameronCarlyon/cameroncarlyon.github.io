@@ -166,3 +166,10 @@ letterFinder("test", "t");
 //   }
 // }
 // letterFinder("test", "t")
+
+var a380 = {
+  engines: 4,
+  decks: 2,
+};
+// console.log(a380)
+// console.log(a380.decks)
