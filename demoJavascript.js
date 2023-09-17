@@ -173,3 +173,38 @@ var a380 = {
 };
 // console.log(a380)
 // console.log(a380.decks)
+
+for (i = 3; i >= 0; i--) {
+  if (i == 0) {
+    console.log("GO!");
+  } else console.log(i);
+}
+var letters = ["A", "B", "C", "D"];
+for (i = 0; i < letters.length; i++) {
+  console.log(letters[i]);
+}
+
+var greeting = "Hello".concat(" there.");
+if (greeting == "Hello there.") {
+  console.log(greeting);
+  console.log("General Kenobi.");
+}
+
+var clothes = [];
+clothes.push("Shoes", "Tie", "Jacket", "Watch", "Shirt");
+clothes.pop();
+clothes.push("Belt");
+console.log(clothes[2]);
+var favCar = {};
+favCar.color = "Red";
+favCar.covertible = false;
+console.log(favCar);
+
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car);
+car.turnTheKey = function () {
+  console.log("The engine is running");
+};
+console.log(car);
