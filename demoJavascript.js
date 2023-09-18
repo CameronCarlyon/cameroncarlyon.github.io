@@ -131,11 +131,11 @@ for (var i = 1; i <= 10; i++) {
 }
 
 // Functions, Objects and Arrays
-function addTwoNums(a, b) {
-  var c = a + b;
-  console.log(c);
-}
-addTwoNums(20, 40);
+// function addTwoNums(a, b) {
+//   var c = a + b;
+//   console.log(c);
+// }
+// addTwoNums(20, 40);
 
 var liverpoolPlayers = [
   "0",
@@ -208,3 +208,18 @@ car.turnTheKey = function () {
   console.log("The engine is running");
 };
 console.log(car);
+
+function addTwoNums(a,b){
+  try{
+  if (typeof(a) != 'number'){
+    throw new ReferenceError('the first argument is not a number')
+  } else if (typeof(b) != 'number'){
+    throw new ReferenceError('the second argument is not a number')
+  } else {
+      console.log(a+b)
+  }
+} catch(err){
+  console.log("Error!", err)}
+}
+addTwoNums(5, "5")
+console.log("It still works")
