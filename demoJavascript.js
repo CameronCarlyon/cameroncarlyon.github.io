@@ -233,8 +233,8 @@ function addTwoNums(a, b) {
     } else {
       console.log(a + b);
     }
-  } catch (err) {
-    console.log("Error!", err);
+  } catch (err01) {
+    console.log("Error!", err01);
   }
 }
 addTwoNums(5, "5");
