@@ -171,17 +171,6 @@ function letterFinder(word, match) {
 letterFinder(20, 10);
 letterFinder("cat", "c");
 
-// -- INCORRECT --
-// function letterFinder (word, match){
-//   for (var counter = 0; counter++; counter==word.length){
-//     if (word[i]) {
-//       word[i] == match
-//       console.log('Found the', match, 'at', i)
-//     } else console.log('---No match found at', i)
-//   }
-// }
-// letterFinder("test", "t")
-
 var a380 = {
   engines: 4,
   decks: 2,
@@ -199,12 +188,14 @@ for (i = 0; i < letters.length; i++) {
   console.log(letters[i]);
 }
 
+// .concat
 var greeting = "Hello".concat(" there.");
 if (greeting == "Hello there.") {
   console.log(greeting);
   console.log("General Kenobi.");
 }
 
+// Storing clothing inside objects
 var clothes = [];
 clothes.push("Shoes", "Tie", "Jacket", "Watch", "Shirt");
 clothes.pop();
@@ -215,6 +206,7 @@ favCar.color = "Red";
 favCar.covertible = false;
 console.log(favCar);
 
+// Functions inside objects
 var car = {};
 car.mileage = 98765;
 car.color = "red";
@@ -224,6 +216,7 @@ car.turnTheKey = function () {
 };
 console.log(car);
 
+// Adding two numbers function
 function addTwoNums(a, b) {
   try {
     if (typeof a != "number") {
