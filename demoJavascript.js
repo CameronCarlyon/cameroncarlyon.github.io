@@ -232,3 +232,34 @@ function addTwoNums(a, b) {
 }
 addTwoNums(5, "5");
 console.log("It still works");
+
+// OOP and Classes
+class Sports {
+  performingSport() {
+    console.log("Playing sports 💓");
+  }
+}
+class Football extends Sports {
+  performingSport() {
+    console.log("Playing Football ⚽️");
+  }
+}
+class Running extends Sports {
+  performingSport() {
+    console.log("On a run 🏃");
+  }
+}
+class Swimming extends Sports {
+  performingSport() {
+    console.log("Taking a swim 🏊");
+  }
+}
+var footballMidfield = new Football();
+var runningJogging = new Running();
+
+footballMidfield.performingSport();
+runningJogging.performingSport();
+
+// Constructors
+console.log(new Date())
+console.log(Math.pow(2,5))
