@@ -262,4 +262,5 @@ runningJogging.performingSport();
 
 // Constructors
 console.log(new Date())
-console.log(Math.pow(2,5))
+var powerOf = Math.pow(2,5)
+console.log(powerOf)
