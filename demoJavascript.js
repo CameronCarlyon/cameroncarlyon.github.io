@@ -261,6 +261,6 @@ footballMidfield.performingSport();
 runningJogging.performingSport();
 
 // Constructors
-console.log(new Date())
-var powerOf = Math.pow(2,5)
-console.log(powerOf)
+console.log(new Date());
+var powerOf = Math.pow(2, 5);
+console.log(powerOf);
