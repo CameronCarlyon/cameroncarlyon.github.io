@@ -10,3 +10,8 @@ p {
 .copyright {
   color: gray;
 }
+.box {
+  background-color: grey;
+  width: 20%;
+  height: 20%;
+}
