@@ -1,17 +1,10 @@
-h1 {
-  margin: auto;
-  color: black;
-  background-color: crimson;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-p {
-  margin: auto;
-  color: gray;
-}
-.copyright {
-  color: gray;
-}
-.box {
-  background-color: grey;
-  width: 200px;
-  height: 200px;
+
+header {
+  justify-content: center;
+  background-color: black;
+  color: white;
 }

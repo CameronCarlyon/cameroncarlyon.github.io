@@ -1,0 +1,383 @@
+@font-face {
+  font-family: Emirates-Light;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://c.ekstatic.net/shared/fonts/emirates/emirates-light-v3.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/emirates/emirates-light-v3.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/emirates/emirates-light-v3.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/emirates/emirates-light-v3.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/emirates/emirates-light-v3.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Emirates-Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://c.ekstatic.net/shared/fonts/emirates/emirates-bold-v3.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/emirates/emirates-bold-v3.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/emirates/emirates-bold-v3.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/emirates/emirates-bold-v3.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/emirates/emirates-bold-v3.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: heroic-condensed-black-oblique;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://c.ekstatic.net/shared/fonts/heroic/heroic-condensed-black-oblique.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/heroic/heroic-condensed-black-oblique.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/heroic/heroic-condensed-black-oblique.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/heroic/heroic-condensed-black-oblique.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/heroic/heroic-condensed-black-oblique.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: EmiratesSBVN-Bold;
+  font-style: normal;
+  font-display: swap;
+  src: url(https://c.ekstatic.net/shared/fonts/vi-ek/emirates-bold.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/vi-ek/emirates-bold.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/vi-ek/emirates-bold.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/vi-ek/emirates-bold.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/vi-ek/emirates-bold.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Roboto-Condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(robotocondensed-regular.eot);
+  src: url(robotocondensed-regular.eot?#iefix) format("embedded-opentype"),
+    url(robotocondensed-regular.woff2) format("woff2"),
+    url(robotocondensed-regular.woff) format("woff"),
+    url(robotocondensed-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://c.ekstatic.net/shared/fonts/kr-ek/ydiygo130-kscpc-euc-h.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/kr-ek/ydiygo130-kscpc-euc-h.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/kr-ek/ydiygo130-kscpc-euc-h.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/kr-ek/ydiygo130-kscpc-euc-h.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/kr-ek/ydiygo130-kscpc-euc-h.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(notosansjp-regular.eot);
+  src: url(notosansjp-regular.eot?#iefix) format("embedded-opentype"),
+    url(notosansjp-regular.woff2) format("woff2"),
+    url(notosansjp-regular.woff) format("woff"),
+    url(notosansjp-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Heroic-Medium;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://c.ekstatic.net/shared/fonts/heroic/heroiccondensed-medium.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/heroic/heroiccondensed-medium.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/heroic/heroiccondensed-medium.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/heroic/heroiccondensed-medium.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/heroic/heroiccondensed-medium.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Tanseek-Bold;
+  src: url(https://c.ekstatic.net/shared/fonts/ar-heroic/tanseekmodernproarabic-bold.eot);
+  src: url(https://c.ekstatic.net/shared/fonts/ar-heroic/tanseekmodernproarabic-bold.eot#iefix)
+      format("embedded-opentype"),
+    url(https://c.ekstatic.net/shared/fonts/ar-heroic/tanseekmodernproarabic-bold.woff2)
+      format("woff2"),
+    url(https://c.ekstatic.net/shared/fonts/ar-heroic/tanseekmodernproarabic-bold.woff)
+      format("woff"),
+    url(https://c.ekstatic.net/shared/fonts/ar-heroic/tanseekmodernproarabic-bold.ttf)
+      format("truetype"),
+    url(https://c.ekstatic.net/shared/fonts/ar-heroic/tanseekmodernproarabic-bold.svg#tanseekmodernproarabic-bold)
+      format("svg");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
+    url(https://fonts.gstatic.com/s/roboto/v16/t6Nd4cfPRhZP44Q5QAjcCzUj_cnvWIuuBMVgbX098Mw.woff2)
+      format("woff2");
+  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#feature-unavailable {
+  cursor: not-allowed;
+}
+
+/* NAV BAR CONTAINER */
+
+.ek-nav-bar-logo {
+  position: relative;
+  background-color: #d71921;
+  min-height: 125px;
+  min-width: 90px;
+  box-sizing: border-box;
+}
+
+.ek-nav-bar-logo img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 7px;
+  padding-bottom: 10px;
+}
+
+.ek-nav-bar {
+  background-color: #333;
+  height: 55px;
+  /* box-sizing: border-box; */
+  padding-left: 13.5%;
+  padding-right: 13.5%;
+  display: flex;
+  /* justify-content: space-between; */
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.ek-nav-bar-links * {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 100%;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+.ek-nav-bar-icon i {
+  display: flex;
+  text-align: center;
+}
+
+.ek-nav-bar-asset *:hover {
+  background-color: #212121;
+}
+
+.ek-nav-bar-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+#ek-nav-bar-secondary {
+  justify-content: end;
+}
+
+/* HERO CONTAINER */
+
+.hero-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("assets/emirates-777.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 50rem;
+  padding: 2% 13.5% 0% 13.5%;
+}
+
+.hero-fly-better {
+  display: flex;
+  justify-content: right;
+  height: 50px;
+}
+
+.hero-text {
+  color: white;
+}
+
+.hero-container h1 {
+  text-transform: uppercase;
+  font-family: Heroic-Medium, Arial Narrow Bold, Franklin Gothic Medium,
+    Franklin Gothic, Arial Narrow, HelveticaNeue, Helvetica, arial, sans-serif;
+  font-size: 5rem;
+  letter-spacing: -5px;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+  font-style: italic;
+  text-align: left;
+}
+
+.hero-container h3 {
+  font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+  margin: -1rem 0;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.btn a {
+  background-color: #d71921;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  /* max-width: fit-content; */
+  padding: 1rem 2rem;
+}
+
+.btn a:hover {
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+#disclaimer-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f4;
+  padding: 33% 13.5% 33% 13.5%;
+}
+
+.disclaimer-box {
+  background-color: white;
+  box-shadow: 0 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+/* CONTACT CONTAINER */
+
+/* QUESTIONNAIRE CONTAINER */
+
+.content-box {
+  background-color: white;
+  box-shadow: 0 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  padding: 3rem;
+  text-align: center;
+  width: 20%;
+  min-width: 20%;
+}
+
+.content-box:hover {
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.box-sub-title {
+  font-family: "HelveticaNeue", "Helvetica Neue Bold", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 1.4rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: #5b5b66;
+}
+
+.box-title {
+  font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+.box-description {
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue,
+    Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: black;
+}
+
+#questionnaire-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f0f0f4;
+  padding: 5% 13.5% 5% 13.5%;
+}
+
+/* FOOTER */
+
+#footer-disclaimer {
+  color: #a9a9a9;
+}
+
+.footer-container {
+  font-family: "Helvetica Neue", Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  background-color: #333;
+  color: white;
+  display: flex;
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.ek-footer-logo {
+  background-color: #d71921;
+  min-height: 125px;
+  min-width: 90px;
+  box-sizing: border-box;
+}
+
+.ek-footer-logo img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 7px;
+  padding-bottom: 10px;
+}
+
+.ek-award-container {
+  width: 100%;
+}
