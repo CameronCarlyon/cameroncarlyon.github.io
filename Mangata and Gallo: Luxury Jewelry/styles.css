@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MISC ITEMS */
+
+.custom-btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  border-color: white;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font: bold;
+}
+
+.custom-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+/* HEADER CONTAINER */
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 5% 0% 5%;
+  background-color: rgb(22, 22, 22);
+  overflow-x: scroll;
+  z-index: 1;
+}
+
+.container-nav {
+  display: flex;
+  min-width: fit-content;
+}
+
+.container-nav div * {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  color: white;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.container-nav div a:hover {
+  background-color: rgb(11, 11, 11);
+}
+
+.container-nav * {
+  color: white;
+  padding-left: 2rem;
+  text-decoration: none;
+  min-width: fit-content;
+}
+
+.logo-container img {
+  vertical-align: middle;
+}
+
+/* HOME CONTAINER */
+
+.home-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/hero-home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80%;
+  padding: 220px 5% 0% 5%;
+  display: grid;
+  grid-template-columns: 700px;
+  height: 900px;
+  overflow: hidden;
+}
+
+.hero-text {
+  width: 50%;
+  color: white;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+  font-weight: lighter;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  display: flex;
+}
+
+.down-arrow a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+.hero-text p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero-text h1 {
+  padding-top: 12rem;
+}
+
+/* PRODUCTS CONTAINER */
+
+.products-container {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  justify-content: space-between;
+  padding: 8% 5% 4% 5%;
+  background: linear-gradient(#eaeaeab3, #f4f4f456),
+    url("assets/featured-products-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.products-container h1 {
+  padding-top: 2rem;
+}
+
+.products-mega-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products-mega-container a {
+  text-decoration: none;
+  padding: 5.6%;
+}
+
+.product-box {
+  border-radius: 1rem;
+  width: 300px;
+  height: 500px;
+  border: 2px solid white;
+}
+
+.product-box * {
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.product-info {
+  color: rgba(255, 255, 255, 0);
+  padding: 1rem;
+}
+
+.product-info:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+#product-one {
+  background: url("assets/product-one-main.jpg");
+  background-size: cover;
+}
+
+#product-one:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url("assets/product-one-secondary.jpg");
+  background-size: cover;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
+}
+
+#product-two {
+  background: url("assets/product-two-main.jpg");
+  background-size: cover;
+}
+
+#product-two:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url("assets/product-two-secondary.jpg");
+  background-size: cover;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
+}
+
+#product-three {
+  background: url("assets/product-three-main.jpg");
+  background-size: cover;
+}
+
+#product-three:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url("assets/product-three-secondary.jpg");
+  background-size: cover;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
+}
+
+/* OWNER CONTAINER */
+
+.owner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20rem 0rem 0rem 0rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("assets/hero-owner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+  font-weight: lighter;
+  color: white;
+  height: 900px;
+}
+
+.owner-text * {
+  max-width: 50rem;
+  padding: 0px 20px 0px 20px;
+  vertical-align: middle;
+}
+
+/* SERVICES CONTAINER */
+
+.services-container {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  display: flex;
+  height: 900px;
+  overflow-x: scroll;
+}
+
+.services-container * {
+  text-align: center;
+  padding: 1rem;
+}
+
+.service-block {
+  width: auto;
+  color: rgba(0, 0, 0, 0);
+}
+
+.service-block * {
+  color: #ffffff00;
+  background-color: #ffffff00;
+}
+
+.service-block:hover * {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 5);
+}
+
+.service-block h2 {
+  padding-top: 100%;
+}
+
+#service-engagements {
+  background: url("assets/services-engagements.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+#service-weddings {
+  background: url("assets/services-weddings.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+#service-anniversaries {
+  background: url("assets/services-anniversaries.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+#service-other {
+  background: url("assets/services-other.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+/* CONTACT CONTAINER */
+
+.contact-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/hero-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 22rem;
+  height: 900px;
+  padding: 320px 5% 0% 5%;
+}
+
+.contact-text {
+  color: white;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+  font-weight: lighter;
+  /* margin-top: 20rem; */
+}
+
+.contact-text * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-text p {
+  padding-bottom: 2rem;
+}
+
+input {
+  padding: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff55;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.name-input {
+  width: 49%;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: medium;
+}
+
+#email-input {
+  width: 100%;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: medium;
+}
+
+#message-input {
+  width: 100%;
+  height: 5rem;
+  overflow-y: auto;
+  padding: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff55;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: medium;
+}
+
+/* FOOTER CONTAINER */
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+.footer-location {
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(49, 49, 49);
+}
+
+.social-media-icons {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+#footer-copyright {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: rgb(49, 49, 49);
+}
