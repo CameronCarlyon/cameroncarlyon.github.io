@@ -137,6 +137,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f0f0f4;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -144,10 +148,24 @@ html {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 #feature-unavailable {
   cursor: not-allowed;
+}
+
+.btn a {
+  background-color: #d71921;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
 
 /* NAV BAR CONTAINER */
@@ -171,11 +189,9 @@ a {
 .ek-nav-bar {
   background-color: #333;
   height: 55px;
-  /* box-sizing: border-box; */
   padding-left: 13.5%;
   padding-right: 13.5%;
   display: flex;
-  /* justify-content: space-between; */
   text-decoration: none;
   color: white;
   overflow: hidden;
@@ -193,7 +209,7 @@ a {
   color: white;
   height: 100%;
   padding: 0px 5px 0px 5px;
-  text-decoration: none;
+  min-width: fit-content;
 }
 
 .ek-nav-bar-icon i {
@@ -216,6 +232,19 @@ a {
   justify-content: end;
 }
 
+#ek-nav-bar-overflow {
+  display: none;
+  text-align: center;
+}
+
+#ek-nav-bar-btn-menu {
+  text-transform: uppercase;
+  border: #666 solid 1px;
+  border-radius: 3px;
+  height: 60%;
+  cursor: pointer;
+}
+
 /* HERO CONTAINER */
 
 .hero-container {
@@ -225,8 +254,8 @@ a {
   background-position: right center;
   background-repeat: no-repeat;
   display: grid;
-  height: 50rem;
-  padding: 2% 13.5% 0% 13.5%;
+  height: 35rem;
+  padding: 2rem 13.5%;
 }
 
 .hero-fly-better {
@@ -249,6 +278,7 @@ a {
   text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
   font-style: italic;
   text-align: left;
+  line-height: 5rem;
 }
 
 .hero-container h3 {
@@ -261,41 +291,33 @@ a {
   margin-bottom: 1rem;
 }
 
-.btn a {
-  background-color: #d71921;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  color: white;
-  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  /* max-width: fit-content; */
-  padding: 1rem 2rem;
-}
-
 .btn a:hover {
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
+/* DISCLAIMER CONTAINER */
+
 #disclaimer-container {
   display: flex;
   justify-content: center;
-  background-color: #f0f0f4;
-  padding: 33% 13.5% 33% 13.5%;
+  padding: 30svh 13.5% 30svh 13.5%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  display: none;
 }
 
-.disclaimer-box {
+.content-box-large {
+  box-sizing: border-box;
   background-color: white;
   box-shadow: 0 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
-  padding: 5rem;
-  text-align: center;
+  padding: 2rem;
+  margin-right: 1.5%;
+  min-height: 100%;
 }
 
-/* CONTACT CONTAINER */
-
-/* QUESTIONNAIRE CONTAINER */
+/* SURVEY CONTAINER */
 
 .content-box {
   background-color: white;
@@ -304,7 +326,6 @@ a {
   padding: 3rem;
   text-align: center;
   width: 20%;
-  min-width: 20%;
 }
 
 .content-box:hover {
@@ -324,26 +345,134 @@ a {
 }
 
 .box-title {
-  font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-family: Emirates-Bold, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.5rem;
-  text-align: center;
   color: black;
 }
 
 .box-description {
-  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue,
-    Helvetica, Arial, Lucida Grande, sans-serif;
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1rem;
   font-weight: 200;
   color: black;
 }
 
-#questionnaire-container {
+.questionnaire-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #f0f0f4;
-  padding: 5% 13.5% 5% 13.5%;
+  padding: 4rem 13.5% 4rem 13.5%;
+}
+
+/* GITHUB CONTAINER */
+
+#github-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("assets/emirates-crew.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 27rem;
+  padding: 2rem 13.5% 0% 13.5%;
+  text-align: center;
+}
+
+#github-container div {
+  color: white;
+  padding: 0.2rem;
+}
+
+#github-container .box-sub-title {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#github-container .box-title {
+  font-size: 3rem;
+}
+
+#github-container a {
+  background-color: white;
+  color: #333;
+}
+
+/* MISC CONTAINER */
+
+.misc-container {
+  padding: 0rem 13.5% 0rem 13.5%;
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 0rem;
+}
+
+#contact-form-container {
+  width: 100%;
+}
+
+#contact-form {
+  text-align: left;
+  max-height: 100%;
+}
+
+#contact-form-input {
+  margin: 1rem 0rem;
+}
+
+#contact-form-input input,
+textarea {
+  min-width: 100%;
+  box-shadow: inset 4px 4px 0 0 #f2f2f2;
+  padding: 1rem;
+  margin: 0.5rem 0rem;
+  box-sizing: border-box;
+  width: auto;
+  border-radius: 0.2rem;
+  border: #666 solid 1px;
+  font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande,
+    sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+#contact-form-input input:hover,
+textarea:hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5), inset 0 0 4px #a9a9a9;
+}
+
+.divider {
+  display: block;
+  width: 60px;
+  border-top: 2px solid #d71921;
+  margin: 1rem 0rem;
+}
+
+.contact-form-section .btn {
+  margin-top: 1.4rem;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vertical-container .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.vertical-container .content-box .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.vertical-container .content-box * {
+  padding: 0.5rem;
 }
 
 /* FOOTER */
@@ -358,14 +487,50 @@ a {
   font-style: normal;
   background-color: #333;
   color: white;
+  padding: 0% 13.5% 0% 13.5%;
+}
+
+.ek-award-container {
+  width: 88%;
   display: flex;
-  padding-left: 13rem;
-  padding-right: 13rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.ek-award-container img {
+  height: 5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-information {
+  display: flex;
+}
+
+.copyright-disclaimer {
+  width: 100%;
+  border-top: rgba(216, 216, 216, 0.2) solid 1px;
+  margin: 1rem 2rem 0rem 0rem;
+}
+
+.copyright-disclaimer * {
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+#footer-copyright {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+#footer-copyright a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
 }
 
 .ek-footer-logo {
+  position: relative;
   background-color: #d71921;
-  min-height: 125px;
+  max-height: auto;
   min-width: 90px;
   box-sizing: border-box;
 }
@@ -373,11 +538,95 @@ a {
 .ek-footer-logo img {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   padding: 7px;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-.ek-award-container {
-  width: 100%;
+@media screen and (max-width: 1130px) {
+  #ek-nav-bar-primary,
+  #ek-nav-bar-secondary {
+    display: none;
+  }
+  .hero-container {
+    height: 25rem;
+    margin-bottom: 3rem;
+  }
+  .hero-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+    font-weight: 400;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    text-align: left;
+    line-height: 3rem;
+  }
+  .hero-text h3 {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .questionnaire-container {
+    padding: 0rem 13.5%;
+  }
+  .content-box {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .content-box-large {
+    width: 100%;
+  }
+  .vertical-container {
+    margin: 0 0;
+    flex-direction: row;
+  }
+  .content-box-large .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+  }
+  .content-box-large .btn {
+    justify-content: center;
+  }
+  .vertical-container .content-box {
+    padding: 5rem 0rem;
+    width: 49%;
+    height: auto;
+  }
+  #github-container {
+    margin: 1rem 13.5%;
+    box-shadow: 0 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+  }
+  #contact-form {
+    justify-content: center;
+    margin: 0.5rem 0rem;
+  }
+  #contact-form .box-description,
+  .box-title {
+    text-align: center;
+  }
+  #ek-nav-bar-overflow {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  }
+  .misc-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0.5rem 0rem;
+  }
+  .footer-container {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vertical-container {
+    flex-direction: column;
+  }
+  .vertical-container .content-box {
+    width: 100%;
+  }
 }
