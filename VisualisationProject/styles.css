@@ -145,6 +145,7 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
 .modal {
   margin: auto 37.3rem;
   padding: 2rem;
@@ -177,9 +178,17 @@ a {
   cursor: not-allowed;
 }
 
+#feature-unavailable {
+  cursor: not-allowed;
+}
+
 .btn {
   cursor: pointer;
   margin: 1rem 0rem;
+}
+
+#book-btn {
+  color: white;
 }
 
 .input {
@@ -201,6 +210,11 @@ a {
   color: #d71921;
 }
 
+select {
+  background-color: #fff;
+  color: #fff;
+}
+
 .btn a,
 button {
   background-color: #d71921;
@@ -215,6 +229,10 @@ button {
   box-sizing: border-box;
   border: 0px;
   cursor: pointer;
+}
+
+button a {
+  color: white;
 }
 
 .form-btn {
@@ -336,9 +354,9 @@ button {
 
 .hero-container {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    url("assets/emirates-777.jpg");
+    url("assets/CabinOverview2_Render.png");
   background-size: cover;
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
   display: grid;
   height: 35rem;
@@ -720,6 +738,18 @@ textarea:hover {
   background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
+  min-height: 70vh;
+}
+
+#confirmation-container {
+  text-align: center;
+  align-items: center;
+  padding: 3rem 13.5%;
+  background: url("assets/seating-charts-background-w2530x1648.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 70vh;
 }
 
 .booking-tabs {
@@ -729,6 +759,7 @@ textarea:hover {
 }
 
 .booking-window {
+  padding: 2rem;
   text-align: left;
   border: 0.1rem solid #d8d8d8;
   border-radius: 3px;
@@ -757,11 +788,92 @@ textarea:hover {
   height: 50px;
 }
 
+.booking-window h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  color: #333;
+}
+
+.input-line * {
+  width: 100%;
+}
+
+.input-line {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+}
+
+.booking-window p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.4;
+}
+
+.booking-window h3:first-of-type {
+  padding-bottom: 1rem;
+}
+
+.booking-window h3:last-of-type {
+  padding-top: 1rem;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.booking-window a {
+  color: #b32c2d;
+  text-decoration: underline;
+}
+
 .add-icon {
   filter: invert(12%) sepia(96%) saturate(5147%) hue-rotate(352deg)
     brightness(93%) contrast(90%);
   height: 50px;
   cursor: pointer;
+  margin: 1rem;
+}
+
+/* Summary Page */
+
+#summary-window {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#summary-window * {
+  width: 100%;
+}
+
+#passenger-details * {
+  display: flex;
+  justify-content: left;
+}
+
+#summary-window div:first-of-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pricing-details {
+  padding-bottom: 1rem;
+}
+
+#pricing-details * {
+  display: flex;
+  justify-content: left;
+}
+
+#summary {
+  display: flex;
+  gap: 50px;
 }
 
 .tabOption {
@@ -816,6 +928,8 @@ textarea:hover {
   display: none;
   text-align: center;
 }
+
+/* Visualisation Cabin */
 
 .seating-container {
   display: flex;
@@ -965,7 +1079,7 @@ textarea:hover {
 
 .economy-row-outer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -1003,6 +1117,10 @@ textarea:hover {
   gap: 26.5px;
 }
 
+.facility-container:last-of-type {
+  margin-top: 55px;
+}
+
 .facility {
   display: flex;
   margin: 5px 0px;
@@ -1032,10 +1150,19 @@ textarea:hover {
   border-radius: 0.4rem;
   box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue",
+    Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .seat:hover {
   background-color: #f2f2f2;
+}
+
+.seat.active {
+  background-color: #d71921;
+  color: #fff;
 }
 
 /* Photo Sphere Viewer */
@@ -1116,6 +1243,10 @@ textarea:hover {
   }
   .tabOption p {
     display: none;
+  }
+  .seating-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
